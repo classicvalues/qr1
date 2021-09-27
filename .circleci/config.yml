@@ -10,9 +10,6 @@ example-job:
     - docker/build:
         image: qr-submission-gateway 
 workflows:
-  example-workflow:
-    jobs:
-      - example-job
   node-tests:
     jobs:
       - node/test
