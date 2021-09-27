@@ -47,7 +47,6 @@ public class TestSecureController {
         JWTAuth provider = JWTAuth.create(null, new JWTAuthOptions()
                 .addPubSecKey(new PubSecKeyOptions()
                         .setAlgorithm("RS256")
-                        .setSecretKey(key)
                 ));
 
         MPJWTToken token = new MPJWTToken();
@@ -65,7 +64,6 @@ public class TestSecureController {
     }
 
     // NOTE:   Expected format is PKCS#8 (BEGIN PRIVATE KEY) NOT PKCS#1 (BEGIN RSA PRIVATE KEY)
-    // See gencerts.sh
     private static String readPemFile() {
         StringBuilder sb = new StringBuilder(8192);
         try (BufferedReader is = new BufferedReader(

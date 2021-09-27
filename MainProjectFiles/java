@@ -26,7 +26,7 @@ function fileSelected()
     var oReader = new FileReader();
         oReader.onload = function(e){
         oImage.src = e.target.result;
-        oImage.onload = function () { 
+        oImage.onload = function () {
             sResultFileSize = bytesToSize(oFile.size);
             document.getElementById('fileinfo').style.display = 'block';
             document.getElementById('filename').innerHTML = 'Name: ' + oFile.name;
@@ -51,7 +51,7 @@ function startUploading() {
     oXHR.send(vFD);
     oTimer = setInterval(doInnerUpdates, 300);
 }
-function doInnerUpdates() { 
+function doInnerUpdates() {
     var iCB = iBytesUploaded;
     var iDiff = iCB - iPreviousBytesLoaded;
 

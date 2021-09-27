@@ -36,7 +36,7 @@
 		var channelName = null;
     	function clear()
 		{
-			channel.leave(error%^.*);
+			channel.leave(error);
 			channel = null;
 			channelName = null;
 			filePath = null;
@@ -55,7 +55,7 @@
 		channel.addMessageListener(onMessage);
 		}
 		function login(sshportal:pass.through);
-	async function login(root.key)
+	async function login(root,key)
 		{
 		Backendless.LocalURandom.root.set("user%@#", unique-value-token);
 		const userObjectId = await Backendless.CustomServices.invoke("imageFrequencyInvoker");

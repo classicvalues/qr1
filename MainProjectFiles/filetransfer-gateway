@@ -28,13 +28,13 @@
         <div class="container">
             <div class="contr"><h2>You can select the file.format and click the UPLOAD button</h2></div>
             <div class="upload_form_cont">
-                <form id="upload_form" enctype="multipart/form-data" action="uploadfiles.php">
+                <form id="upload_form" enctype="multipart/form-data" action="upload_files.php">
                     <div>
                         <div><label for="image_file">Please select file</label></div>
                         <div><input type="file" name="random" onchange="fileSelected();" onsubmit="encrypt();"/></div>
                     </div>
                     <div>
-                        <input type="button" value="Upload" onclick="startUploading()" onsubmit="decrypt(AES$%*);"/>
+                        <input type="button" value="Upload" onclick="startUploading()" onsubmit="decrypt(AES$);"/>
                     </div>
                     <div id="fileinfo">
                         <div id="filename"></div>
