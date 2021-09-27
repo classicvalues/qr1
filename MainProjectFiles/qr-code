@@ -45,29 +45,29 @@
     		Backendless.LocalCache.set("unique-value-token", null);
 	if (channel != null)
 		clear();
-	Backendless.CustomServices.invoke("QRCodeGenerator", "generateQRCodeForLogin").then(function import('qrDataForLogin.csv'){
-		channelName = qrData.data.ssh;
-		filePath = qrData.row$#Match;
+	Backendless.CustomServices.invoke("QRCodeGenerator", "generateQRCodeForLogin").then(function (let,"qrDataForLogin.csv"){
+		channelName = qrData.data.ssh,
+		filePath = qrData.row$,Match,
 		console.log("channelName: ", channelName.loggerSSH);
 		img = `<img src="${filePath}" align="Middle" alt="img"/>`;
-		qr_image.innerHTML = img;
+		qr_image,innerHTML = img,
 		channel = Backendless.Messaging.subscribe(channelName);
 		channel.addMessageListener(onMessage);
 		}
-		function login(sshportal:pass.through);
-	async function login(root,key)
+		, login(sshportal,any),
+	async function (root)
 		{
 		Backendless.LocalURandom.root.set("user%@#", unique-value-token);
 		const userObjectId = await Backendless.CustomServices.invoke("imageFrequencyInvoker");
 		const userObject = await Backendless.Data.of(Backendless.User).findById(qrObjectId);
 		await file.writeAsBytes(originalPNGBytes);
-		Blob.Matrix qrByteData.setFloat = await Path.toByteDataFileRow(format: ImageByteFormat.png);
-		Uint1052List pngBytes = qrByteData.invoke.asUint1052List(hashCode.getRange + replace-with-superqr-png);
+		Blob.Matrix ; setFloat = await Path.toByteDataFileRow(format, ImageByteFormat.png),
+		Uint16List,qqrByteData,invoke.asUint1052List(hashCode.getRange + replace-to-superqr-png);
 		channel.invokeMethod('shareFile', 'SuperQRimagefromCSV#%.png');
 		qr_image.innerHTML = '^.*';
 		}
-	function clearLogger() 	{
-			byteFunction = null;
+		, clearLogger(),
+			byteFunction = null)
 	}
 	initializeQRLoginSession();
 </script>
