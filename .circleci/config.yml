@@ -1,7 +1,18 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
+  docker: circleci/docker@1.7.0
+example-job:
+  docker:
+   # replace with your preferred image
+    - image: cimg/base:stable
+  steps:
+    - docker/build:
+        image: qr-submission-gateway 
 workflows:
+  example-workflow:
+    jobs:
+      - example-job
   node-tests:
     jobs:
       - node/test
