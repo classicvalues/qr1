@@ -1,0 +1,60 @@
+<!DOCtype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>                                                             </title>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="//api.backendless.com/sdk/js/latest/backendless.js"></script>
+        <script src="js/script.js"></script>
+        <style>
+            .container  {
+                text-align: center;
+                align-items: center;
+                vertical-align: middle;
+                margin: 100px auto;
+                white-space: nowrap;
+                }
+            .body   {
+                text-align: center;
+                align-items: center;
+                vertical-align: middle;
+                margin: 100px auto;
+                white-space: nowrap;
+                }
+        </style>
+    </head>
+    <body>
+        <h2>                                                                 </h2>
+        <div class="container">
+            <div class="contr"><h2>You can select the file.format and click the UPLOAD button</h2></div>
+            <div class="upload_form_cont">
+                <form id="upload_form" enctype="multipart/form-data" action="uploadfiles.php">
+                    <div>
+                        <div><label for="image_file">Please select file</label></div>
+                        <div><input type="file" name="random" onchange="fileSelected();" onsubmit="encrypt();"/></div>
+                    </div>
+                    <div>
+                        <input type="button" value="Upload" onclick="startUploading()" onsubmit="decrypt(AES$%*);"/>
+                    </div>
+                    <div id="fileinfo">
+                        <div id="filename"></div>
+                        <div id="filesize"></div>
+                        <div id="filetype"></div>
+                        <div id="filedim"></div>
+                    </div>
+                    <div id="progress_info">
+                        <div id="progress"></div>
+                        <div id="progress_percent"></div>
+                        <div class="clear_both"></div>
+                        <div>
+                            <div id="remaining">&nbsp;</div>
+                            <div id="transfer">&nbsp;</div>
+                            <div class="clear_both"></div>
+                        </div>
+                        <div id="upload_response"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
